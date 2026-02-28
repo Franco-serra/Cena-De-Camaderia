@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cena de Camaderia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Confirmación de Asistencia</h1>
+        <p>Nos encantaría contar con tu presencia</p>
+
+        <form id="rsvpForm">
+            <input type="text" id="name" placeholder="Nombre completo" required>
+            <input type="text" id="lastName" placeholder="Apellido" required>
+            <div class="checkbox-container">
+                <input type="checkbox" id="bringGuest">
+                <label for="bringGuest">¿Trae invitados?</label>
+            </div>
+
+            <div id="guestCount">
+                <input type="number" id="guestNumber" min="1" max="10" placeholder="¿Cuántos invitados llevas?">
+            </div>
+
+            <button type="submit">Confirmar asistencia</button>
+            <p id="mensaje"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
