@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             localStorage.setItem("token", data.token);
-            window.location.href = "/admin.html";
+            window.location.href = "admin.html";
 
         } catch (error) {
             console.error("Error detectado:", error);
