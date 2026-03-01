@@ -30,12 +30,6 @@
         font-size: 28px;
     }
 
-    p {
-        font-weight: 300;
-        margin-bottom: 30px;
-        color: #666;
-    }
-
     input, select {
         width: 100%;
         padding: 12px;
@@ -94,3 +88,52 @@
         from { opacity: 0; transform: translateY(20px);}
         to { opacity: 1; transform: translateY(0);}
     }
+
+    .logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.club-name {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #b89c5c;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 20px;
+    width: 420px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+    text-align: center;
+    animation: fadeIn 1s ease;
+    position: relative;
+}
+
+/* Línea decorativa dorada */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #b89c5c;
+    border-radius: 0 0 4px 4px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+p {
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #777;
+}

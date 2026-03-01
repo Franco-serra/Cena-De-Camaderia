@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cena de Camaderia</title>
+    <title>Cena de Camaradería</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="card">
-        <h1>Confirmación de Asistencia</h1>
+
+        <img src="./img/logo-aaz.png" alt="Logo del Club" class="logo">
+
+        <h2 class="club-name">Asociación Civil de Aerocontrolados Zárate</h2>
+
+        <h1>Cena de Camaradería</h1>
         <p>Nos encantaría contar con tu presencia</p>
 
         <form id="rsvpForm">
             <input type="text" id="name" placeholder="Nombre completo" required>
             <input type="text" id="lastName" placeholder="Apellido" required>
+
             <div class="checkbox-container">
                 <input type="checkbox" id="bringGuest">
                 <label for="bringGuest">¿Trae invitados?</label>
@@ -33,5 +42,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
