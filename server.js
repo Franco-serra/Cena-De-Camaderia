@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -33,8 +34,8 @@ if (!process.env.MONGO_URI) {
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
         console.log("✅ Conectado a MongoDB");
-        app.listen(process.env.PORT || 3000, () => {
-            console.log("🚀 Servidor corriendo en puerto " + (process.env.PORT || 3000));
+        app.listen(PORT, () => {
+            console.log("Servidor corriendo en puerto " + PORT);
         });
     })
     .catch((error) => {
