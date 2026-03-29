@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(cors({
-    origin: "https://cenadecamaraderiafront-end.vercel.app",
+    origin: "https://franco-serra.github.io/cena-de-camaderia-front/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
